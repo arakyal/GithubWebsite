@@ -15,6 +15,13 @@
   --wine:#6d2027; --wine-bright:#8a2b32; --gold:#a9834f; --stone:#85806f; --line:rgba(236,226,204,0.14);
 }
 *{box-sizing:border-box;margin:0;padding:0;}
+body{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
+  cursor:default;
+}
+.ig-line a{-webkit-user-select:text;user-select:text;cursor:pointer;}
 html,body{height:100%;}
 body{
   background:radial-gradient(ellipse at 50% 30%,rgba(169,131,79,0.10),transparent 60%),var(--ink);
@@ -43,7 +50,7 @@ a{color:inherit;}
 
 .eyebrow{
   font-family:'JetBrains Mono',monospace;
-  font-size:0.8rem;
+  font-size:1rem;
   letter-spacing:0.18em;
   text-transform:uppercase;
   color:var(--gold);
@@ -80,7 +87,7 @@ p.sub{
 .ig-line{
   margin-top:22px;
   font-family:'JetBrains Mono',monospace;
-  font-size:0.78rem;
+  font-size:1rem;
   color:var(--stone);
 }
 .ig-line a{color:#3897f0;text-decoration:none;}
